@@ -13,6 +13,7 @@
 		0B593C47251A6290007806CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B593C45251A6290007806CE /* Main.storyboard */; };
 		0B593C49251A6292007806CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B593C48251A6292007806CE /* Assets.xcassets */; };
 		0B593C4C251A6292007806CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B593C4A251A6292007806CE /* LaunchScreen.storyboard */; };
+		0B5C2675252849C4002A9161 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C2674252849C4002A9161 /* PlaceModel.swift */; };
 		0B66F61D2527A9F1005DB752 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0B593C48251A6292007806CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B593C4B251A6292007806CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B593C4D251A6292007806CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5C2674252849C4002A9161 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				0B593C3F251A6290007806CE /* AppDelegate.swift */,
 				0B593C41251A6290007806CE /* SceneDelegate.swift */,
 				0B593C43251A6290007806CE /* ViewController.swift */,
+				0B5C2674252849C4002A9161 /* PlaceModel.swift */,
 				0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */,
 				0B593C45251A6290007806CE /* Main.storyboard */,
 				0B593C48251A6292007806CE /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				0B593C44251A6290007806CE /* ViewController.swift in Sources */,
 				0B593C40251A6290007806CE /* AppDelegate.swift in Sources */,
+				0B5C2675252849C4002A9161 /* PlaceModel.swift in Sources */,
 				0B66F61D2527A9F1005DB752 /* CustomTableViewCell.swift in Sources */,
 				0B593C42251A6290007806CE /* SceneDelegate.swift in Sources */,
 			);
