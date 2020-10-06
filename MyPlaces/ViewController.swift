@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let places = Place.getPlaces()
+    var places = Place.getPlaces()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,18 +27,21 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         cell.nameLabel?.text = places[indexPath.row].name
         cell.locationLabel.text = places[indexPath.row].location
-        cell.imageOfPlace.image = UIImage(named: places[indexPath.row].image)
+        cell.imageOfPlace.image = UIImage(named: places[indexPath.row].restaurantImage!)
         cell.typeLabel.text = places[indexPath.row].type
         
-        cell.imageOfPlace?.image = UIImage(named: places[indexPath.row].image)
         cell.imageOfPlace?.layer.cornerRadius = cell.imageOfPlace.frame.size.height / 2
         cell.imageOfPlace?.clipsToBounds = true
         
         return cell
     }
     
-    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        guard let newPlaceVC = segue.source as? NewPlaceViewController else { return }
         
+        newPlaceVC.saveNewPlace()
+        places.append(newPlaceVC.newPlace!)
+        tableView.reloadData()
     }
 
 }
