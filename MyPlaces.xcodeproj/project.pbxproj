@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		0B593C4C251A6292007806CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B593C4A251A6292007806CE /* LaunchScreen.storyboard */; };
 		0B5C2675252849C4002A9161 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C2674252849C4002A9161 /* PlaceModel.swift */; };
 		0B66F61D2527A9F1005DB752 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */; };
+		0BA3EBCA253B35060040552F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3EBC9253B35060040552F /* StorageManager.swift */; };
 		0BA909C32529D2010085E024 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA909C22529D2000085E024 /* NewPlaceViewController.swift */; };
 		873F0E1FDB303010ED074B27 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F197DE938CE10CE3A59C061 /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		0B593C4D251A6292007806CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B5C2674252849C4002A9161 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0BA3EBC9253B35060040552F /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0BA909C22529D2000085E024 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		43DF8BA057BEB1B2E5527B11 /* Pods-MyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyPlaces/Pods-MyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		9F197DE938CE10CE3A59C061 /* Pods_MyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				0B593C41251A6290007806CE /* SceneDelegate.swift */,
 				0B593C43251A6290007806CE /* ViewController.swift */,
 				0B5C2674252849C4002A9161 /* PlaceModel.swift */,
+				0BA3EBC9253B35060040552F /* StorageManager.swift */,
 				0B66F61C2527A9F1005DB752 /* CustomTableViewCell.swift */,
 				0B593C45251A6290007806CE /* Main.storyboard */,
 				0BA909C22529D2000085E024 /* NewPlaceViewController.swift */,
@@ -97,7 +100,6 @@
 				43DF8BA057BEB1B2E5527B11 /* Pods-MyPlaces.debug.xcconfig */,
 				E91769B9581406DC84A521A7 /* Pods-MyPlaces.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,6 +220,7 @@
 				0B593C44251A6290007806CE /* ViewController.swift in Sources */,
 				0BA909C32529D2010085E024 /* NewPlaceViewController.swift in Sources */,
 				0B593C40251A6290007806CE /* AppDelegate.swift in Sources */,
+				0BA3EBCA253B35060040552F /* StorageManager.swift in Sources */,
 				0B5C2675252849C4002A9161 /* PlaceModel.swift in Sources */,
 				0B66F61D2527A9F1005DB752 /* CustomTableViewCell.swift in Sources */,
 				0B593C42251A6290007806CE /* SceneDelegate.swift in Sources */,

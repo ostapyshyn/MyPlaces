@@ -17,9 +17,10 @@ class NewPlaceViewController: UITableViewController {
     @IBOutlet var placeLocation: UITextField!
     @IBOutlet var placeType: UITextField!
     
+    
     var imageIsChanged = false
     
-    var newPlace: Place?
+    var newPlace = Place()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,12 +75,20 @@ class NewPlaceViewController: UITableViewController {
         } else {
             image = #imageLiteral(resourceName: "imagePlaceholder")
         }
+        let imageData = image?.pngData()
+        let newPlace = Place(name: placeName.text!,
+                             location: placeLocation.text,
+                             type: placeType.text,
+                             imageData: imageData)
+        StorageManager.saveObject(newPlace)
         
-        newPlace = Place(name: placeName.text!,
-                         location: placeLocation.text,
-                         type: placeType.text,
-                         image: image,
-                         restaurantImage: nil)
+        
+        
+//        newPlace = Place(name: placeName.text!,
+//                         location: placeLocation.text,
+//                         type: placeType.text,
+//                         image: image,
+//                         restaurantImage: nil)
     }
     
     @IBAction func cancelAction(_ sender: Any) {
